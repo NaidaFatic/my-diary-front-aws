@@ -1,0 +1,35 @@
+header .logo {
+  font-size: calc(1rem + 1vw) !important;
+  background-image: url("../img/logo-sm.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 10px;
+}
+
+svg {
+  width: calc(1.5rem + 1vw);
+  height: calc(1.5rem + 1vh);
+  stroke-width: 1.25;
+  cursor: pointer;
+  margin-inline: 10px;
+}
+
+header .active svg {
+  fill: black;
+}
+
+header {
+  border-bottom: 1px solid #e5e4e4;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 12%);
+  background: white;
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 1;
+}
+
+@media screen and (min-width: 767px) {
+  header {
+    padding-inline: 20px;
+  }
+}

@@ -1,0 +1,133 @@
+.login_container {
+  margin: 0px;
+}
+
+.branding_section {
+  background: url("../img/branding.png"),
+    linear-gradient(
+      16.49deg,
+      rgba(175, 216, 177, 0.52) 58.48%,
+      rgba(224, 208, 176, 0.41) 71.39%,
+      rgba(252, 200, 178, 0.3) 84.75%
+    );
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 100vh;
+}
+
+.branding_image {
+  background-image: url("../img/branding.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.headline {
+  margin-top: 70px !important;
+  margin-left: 50px;
+}
+
+.headline h2 {
+  font-weight: 400 !important;
+  letter-spacing: 0.045em;
+}
+
+.headline h1 {
+  letter-spacing: 0.145em;
+}
+.login_form_container {
+  padding-inline: 20px;
+}
+
+.login_form_container form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 33px;
+}
+
+input[type="submit"] {
+  letter-spacing: 0.145em;
+  font-size: calc(1.3rem + 0.7vw);
+  height: 70px;
+  padding-inline: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login_form_container .active {
+  background: rgba(17, 75, 95, 0.72) !important;
+  color: white !important;
+}
+
+input[type="submit"]:hover {
+  background: rgba(17, 75, 95, 0.72) !important;
+  color: white !important;
+}
+
+h4 {
+  margin-bottom: 0px !important;
+}
+
+.logo-sm {
+  display: none;
+}
+
+.login_form_container img {
+  display: none;
+}
+.login {
+  padding-inline: 45px !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .logo-sm {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    right: 38px;
+    top: 92px;
+    width: 20%;
+  }
+  .login_form_container form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .login_container {
+    margin-bottom: 40px;
+  }
+  .branding_section {
+    background: none;
+    height: fit-content;
+    max-width: 410px !important;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+  .headline {
+    margin-top: 45px !important;
+    margin-left: 0px;
+  }
+  .headline h1 {
+    background-image: url("../img/logo-sm.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+  }
+  .pb-150 {
+    padding-bottom: 40px;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    margin-top: -30px;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  h2 {
+    text-align: center;
+  }
+}

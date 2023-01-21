@@ -1,0 +1,146 @@
+.profile {
+  border: 1px solid #e5e4e4;
+  padding-block: 20px;
+  margin-bottom: 20px;
+}
+
+.profile section {
+  margin: 20px;
+}
+
+.profile .posts div .postWrap {
+  max-width: 425px;
+  margin: auto;
+  height: 220px;
+  background-color: #c4c4c469;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.profile .posts div .postWrap:hover {
+  background-blend-mode: saturation;
+}
+
+.profile .posts div .postName {
+  font-size: calc(1rem + 0.5vw);
+  padding: 5px;
+  padding-top: 20px;
+  height: fit-content;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  text-align: center;
+  z-index: 0;
+  position: relative;
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.profile .posts div .postWrap:hover .postName {
+  visibility: visible;
+  opacity: 1;
+}
+
+.postDescription {
+  padding: 5px;
+}
+
+.editPost {
+  margin: 5px;
+}
+
+.modal label {
+  padding-block: 20px;
+}
+
+.month {
+  width: 105px;
+  height: 0;
+  border-bottom: 20px solid #114b5f;
+  border-top: 22px solid #114b5f;
+  border-left: 15px solid transparent;
+  margin-block: 20px;
+  margin-left: -20px;
+}
+
+.month p {
+  color: white;
+  position: relative;
+  text-align: center;
+  right: -10px;
+  top: -19px;
+}
+.user-img-picture,
+.user-img {
+  width: calc(3rem);
+  height: calc(3rem);
+  background: #ebebeb;
+  border-radius: 100%;
+  margin-inline: 10px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.edit-picture {
+  position: absolute;
+  top: 8%;
+  left: 30px;
+}
+
+input[type="button"] {
+  width: max-content;
+  cursor: pointer;
+}
+
+input[type="button"]:focus {
+  background: rgba(17, 75, 95, 0.72);
+}
+
+.picture-button {
+  width: 220px !important;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+}
+form .user-img-picture {
+  width: calc(5rem);
+  height: calc(5rem);
+  cursor: pointer;
+}
+
+.post-pic-container {
+  width: "80%";
+}
+
+.post-modal {
+  width: 70rem;
+  height: 100%;
+  padding: 40px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .user-img-picture,
+  .user-img {
+    width: calc(3rem);
+    height: calc(3rem);
+  }
+
+  .post-pic-container {
+    width: "100%";
+    margin-bottom: 20px;
+  }
+
+  .post-modal {
+    width: 70rem;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .post-color {
+    width: -webkit-fill-available !important;
+  }
+}

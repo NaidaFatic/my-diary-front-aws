@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+main {
+  padding-top: calc(66px + 1vw);
+  padding-bottom: 100px;
+  max-width: 970px;
+  margin: auto;
+  z-index: -1;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* 
+    TYPOGRAFY 
+  */
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700 !important;
+}
+
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "Grand Hotel", cursive;
+  font-size: calc(3rem + 1.5vw) !important;
+  font-weight: 400 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+a {
+  color: black !important;
+}
+
+.fw {
+  margin-inline: auto;
+}
+
+/*
+    SCREEN SIZE
+  */
+.w-1740 {
+  max-width: 1740px !important;
+}
+.w-1200 {
+  max-width: 1200px !important;
+}
+.w-410 {
+  max-width: 410px !important;
+}
+.w-670 {
+  max-width: 670px !important;
+}
+.w-870 {
+  max-width: 870px !important;
+}
+.w-970 {
+  max-width: 970px !important;
+}
+.w-370 {
+  max-width: 370px !important;
+}
+
+/* 
+    TYPOGRAFY 
+  */
+h1 {
+  font-size: calc(2rem + 0.7vw);
+}
+h2 {
+  font-size: calc(1.3rem + 0.7vw);
+}
+h3 {
+  font-size: calc(1rem + 0.7vw);
+}
+h4 {
+  font-size: calc(0.8rem + 0.7vw);
+}
+
+p {
+  font-size: calc(0.7rem + 0.5vw);
+}
+/* PADDING */
+.pb-150 {
+  padding-bottom: 150px;
+}
+
+@media screen and (min-width: 767px) {
+  input::placeholder {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fw {
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    padding-top: calc(50px + 1vw);
+    padding-inline: 20px;
+  }
+}
+form input {
+  height: 55px;
+  padding: 10px;
+  border: none;
+  background: #fffefe;
+  border-bottom: solid rgb(106, 106, 106) 2px;
+}
+
+input[type="submit"] {
+  color: black;
+  border: none;
+  background: #fffefe;
+  border-bottom: solid rgb(106, 106, 106) 2px;
+}
+.col {
+  max-width: fit-content !important;
+}
+input:focus {
+  outline: none;
+  background: #c1c1c12e;
+  border-bottom: solid rgb(106, 106, 106) 2px;
+}
+
+.bg-submit {
+  background: rgba(17, 75, 95, 0.72);
+}
+
+.error {
+  color: rgb(217 83 83);
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #fffefe;
+  border-bottom: solid rgb(106, 106, 106) 2px;
+}
+
+textarea:focus {
+  outline: none;
+  background: #c1c1c12e;
+  border-bottom: solid rgb(106, 106, 106) 2px;
+}

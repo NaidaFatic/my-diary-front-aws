@@ -1,0 +1,98 @@
+.m-auto {
+  margin: auto;
+}
+
+.post {
+  border: 1px solid #e5e4e4;
+  padding-block: 20px;
+  margin-bottom: 20px;
+}
+
+.post-img {
+  padding: 10px;
+}
+
+.post-img h3 {
+  letter-spacing: 0.165em;
+  margin-left: 10px;
+  overflow-wrap: anywhere;
+}
+
+.user-img {
+  width: calc(1.5rem + 1vw);
+  height: auto;
+  background: #ebebeb;
+  border-radius: 100%;
+}
+
+.post-photo {
+  background: #ebebeb;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.post-comment {
+  margin-block: 10px;
+}
+.post-desc,
+.post-name {
+  text-align: left;
+  padding-top: 20px;
+}
+
+.post-desc p {
+  font-size: calc(0.5rem + 0.5vw);
+}
+
+.like {
+  fill: red;
+  color: red;
+  margin: 0px;
+}
+
+.dislike {
+  fill: none;
+  color: black;
+  margin: 0px;
+}
+
+.comment {
+  fill: #114b5f;
+  color: #114b5f;
+}
+
+.uncomment {
+  fill: none;
+  color: black;
+}
+
+.showComment {
+  opacity: 1;
+  height: auto;
+  transition: opacity 1s ease-out;
+}
+
+.notShowComment {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+.commentDiv {
+  width: -webkit-fill-available;
+}
+
+input {
+  width: -webkit-fill-available;
+  padding: 10px;
+  border-bottom: solid rgb(106, 106, 106) 2px;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+img {
+  margin: auto;
+}

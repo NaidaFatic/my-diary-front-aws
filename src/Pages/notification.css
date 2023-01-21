@@ -1,0 +1,73 @@
+.m-auto {
+  margin: auto;
+}
+
+.post {
+  border: 1px solid #e5e4e4;
+  padding-block: 0px;
+  margin-bottom: 20px;
+}
+
+.post-img {
+  padding: 10px;
+}
+
+.post-img h3 {
+  letter-spacing: 0.165em;
+  margin-left: 10px;
+  overflow-wrap: anywhere;
+}
+
+.post-photo {
+  background: #ebebeb;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.post-comment {
+  margin-block: 10px;
+}
+.post-desc,
+.post-name {
+  text-align: left;
+  padding-top: 20px;
+}
+
+.post-desc p {
+  font-size: calc(0.5rem + 0.5vw);
+}
+
+.notif .like-notf {
+  display: none;
+}
+
+.approve {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(209, 238, 220);
+}
+
+.like-post span {
+  width: 50px;
+  height: 50px;
+  background-color: #d9d6d6;
+}
+
+.searchFriend,
+.searchFriend input,
+.searchFriend input:hover {
+  border: none;
+  background: #fbfafa;
+  width: -webkit-fill-available;
+  cursor: pointer;
+}
+.searchFriend {
+  border-bottom: rgba(105, 105, 105, 0.399) 1px solid;
+}
+.searchFriend svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 0px;
+}
