@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+  nginx-react:
+    image: reactapp:latest
+    container_name: myreactApp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    environment:
+      NODE_ENV: production
