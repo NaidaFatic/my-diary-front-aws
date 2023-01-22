@@ -40,7 +40,7 @@ export class Ajax {
 
     static async getAsync(api, params) {
         try {
-            const response = await axios.get('http://onlinediarybackend1-env.eba-jcdedauh.eu-central-1.elasticbeanstalk.com/api/' + api, params);
+            const response = await axios.get('https://onlinediarybackend-l8y9.onrender.com/api/' + api, params);
             // console.log(response.data);
             return response.data;
         } catch (error) {
@@ -50,7 +50,7 @@ export class Ajax {
     }
 
     static post(api, params, callback) {
-        axios.post('http://onlinediarybackend1-env.eba-jcdedauh.eu-central-1.elasticbeanstalk.com/api/' + api, params)
+        axios.post('https://onlinediarybackend-l8y9.onrender.com/api/' + api, params)
             .then(function (response) {
                 callback(response.data);
             })
@@ -60,7 +60,7 @@ export class Ajax {
     }
 
     static get(api, params, callback) {
-        axios.get('http://onlinediarybackend1-env.eba-jcdedauh.eu-central-1.elasticbeanstalk.com/api/' + api, params)
+        axios.get('https://onlinediarybackend-l8y9.onrender.com/api/' + api, params)
             .then(function (response) {
                 callback(response.data);
             })
@@ -71,7 +71,7 @@ export class Ajax {
     }
 
     static put(api, params, callback) {
-        axios.put('http://onlinediarybackend1-env.eba-jcdedauh.eu-central-1.elasticbeanstalk.com/api/' + api, params)
+        axios.put('https://onlinediarybackend-l8y9.onrender.com/api/' + api, params)
             .then(function (response) {
                 callback(response.data);
             })
@@ -82,7 +82,7 @@ export class Ajax {
     }
 
     static delete(api, params, callback) {
-        axios.delete('http://onlinediarybackend1-env.eba-jcdedauh.eu-central-1.elasticbeanstalk.com/api/' + api, params)
+        axios.delete('https://onlinediarybackend-l8y9.onrender.com/api/' + api, params)
             .then(function (response) {
                 callback(response.data);
             })
