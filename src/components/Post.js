@@ -86,7 +86,7 @@ export const Post = (props) => {
     if (loading || !owner || !user) {
         return (
             <main>
-                <img src={loadingGif} alt="loading page" width="101" height="70" />
+                <img crossorigin="anonymous" src={loadingGif} alt="loading page" width="101" height="70" />
             </main >
         );
     } else {

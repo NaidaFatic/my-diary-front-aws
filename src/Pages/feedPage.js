@@ -63,7 +63,7 @@ function FeedPage(props) {
                     dataLength={items.length}
                     next={fetchMoreData}
                     hasMore={hasMore}
-                    loader={<main ><img src={loadingGif} alt="loading page" width="101" height="70" /></main >}
+                    loader={<main ><img crossorigin="anonymous" src={loadingGif} alt="loading page" width="101" height="70" /></main >}
                     endMessage={<>You have reached the end</>}
                 >
                     <div>

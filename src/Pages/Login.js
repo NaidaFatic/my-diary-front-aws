@@ -88,7 +88,7 @@ function Login() {
               }}
             >
               <Form className="mx-auto mx-5">
-                <img src={logo} height="45" width="406" alt="My Diary" />
+                <img src={logo} crossorigin="anonymous" height="45" width="406" alt="My Diary" />
                 <h2 className="pb-150">Log in</h2>
                 <TextField label="Email" name="email" type="email" placeholder="example@example.com" />
                 <TextField label="Password" name="password" type="password" placeholder="strongpassword" />
@@ -123,7 +123,7 @@ function Login() {
               }}
             >
               <Form className="mx-auto mx-5">
-                <img src={logo} height="45" width="406" alt="My Diary" />
+                <img crossorigin="anonymous" src={logo} height="45" width="406" alt="My Diary" />
                 <h2 className="pb-150">Register</h2>
                 <TextField label="Name" name="name" type="text" placeholder="Name" />
                 <TextField label="Surname" name="surname" type="text" placeholder="Surname" />

@@ -106,7 +106,7 @@ function ProfilePostPrivate(props) {
 
     if (loading || !post) {
         return (
-            <><img src={loadingGif} alt="loading page" width="101" height="70" /></>
+            <><img crossorigin="anonymous" src={loadingGif} alt="loading page" width="101" height="70" /></>
         );
     } else {
         return (post.private ?
@@ -207,7 +207,7 @@ function ProfilePostPrivate(props) {
                                             <div className="md:flex flex-none">
                                                 {post.picture &&
                                                     <div className="post-pic-container">
-                                                        <img src={post.picture} style={{ width: '100%' }} className="ml-0" alt="Post image" />
+                                                        <img crossorigin="anonymous" src={post.picture} style={{ width: '100%' }} className="ml-0" alt="Post image" />
                                                     </div>
                                                 }
                                                 {editing ?

@@ -50,7 +50,7 @@ export const FriendLike = (props) => {
                         <h4>{user.name} {user.surname}</h4>
                     </div>
                     <div className="like-post text-right grow flex justify-end items-center"><h4>{props.post.name}</h4>
-                        {props.post.picture && <Link to={{ pathname: '/profile/' + props.post.ownerID }} state={{ modal: props.post._id }}><img src={props.post.picture} height="45" width="50" alt={""} className="ml-3 mx-0" /></Link>}
+                        {props.post.picture && <Link to={{ pathname: '/profile/' + props.post.ownerID }} state={{ modal: props.post._id }}><img crossorigin="anonymous" src={props.post.picture} height="45" width="50" alt={""} className="ml-3 mx-0" /></Link>}
                         {!props.post.picture && <Link to={{ pathname: '/profile/' + props.post.ownerID }} state={{ modal: props.post._id }}> <IconExternalLink /> </Link>}
                     </div>
                 </div>
